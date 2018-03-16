@@ -32,7 +32,7 @@ const GridRow = ({ columns, value }) => (
   </div>
 );
 GridRow.propTypes = {
-  columns: PropTypes.arrayOf(columnPropTypes),
+  columns: PropTypes.arrayOf(PropTypes.shape(columnPropTypes)),
   value: PropTypes.object,
 };
 GridRow.defaultProps = {
